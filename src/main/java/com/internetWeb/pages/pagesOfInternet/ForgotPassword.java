@@ -11,12 +11,12 @@ public class ForgotPassword extends BasePage {
         super(driver);
     }
 
-@FindBy(id = "email")
-    WebElement  inputEmail;
+    @FindBy(id = "email")
+    WebElement inputEmail;
 
     public ForgotPassword enterEmail(String email) {
-type(inputEmail, email);
-return this;
+        type(inputEmail, email);
+        return this;
     }
 
     @FindBy(id = "form_submit")
@@ -28,8 +28,9 @@ return this;
 
     @FindBy(xpath = "//h1[.='Internal Server Error']")
     WebElement serverErrorPage;
-    public boolean isPasswordRef(){
-       return serverErrorPage.isDisplayed();
+
+    public boolean isPasswordRef() {
+        return serverErrorPage.isDisplayed();
 
     }
 
