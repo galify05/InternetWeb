@@ -52,4 +52,17 @@ public class HomePage extends BasePage {
         click(iframe);
     }
 
+    @FindBy(css = "[href='/windows']")
+    WebElement windows;
+
+    public void getMultiWindowsPage(){
+        click(windows);
+    }
+
+    @FindBy(css = "[href='/dropdown']")
+WebElement dropdown;
+
+    public void getDropdownPage(){
+        click(dropdown);
+    }
 }

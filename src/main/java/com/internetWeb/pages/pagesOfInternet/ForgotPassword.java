@@ -31,7 +31,6 @@ public class ForgotPassword extends BasePage {
 
     public boolean isPasswordRef() {
         return serverErrorPage.isDisplayed();
-
     }
 
 }
