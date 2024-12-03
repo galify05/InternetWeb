@@ -29,4 +29,18 @@ public class BasePage {
             element.sendKeys(text);
         }
     }
+
+// //////////////////////////////////////////////////////////////////////////
+    public void pause(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean shouldHaveText(WebElement element, String text, int time) {
+        return new WebDriverWait(driver, Duration.ofSeconds(time))
+                .until(ExpectedConditions.textToBePresentInElement(element, text));
+    }
 }

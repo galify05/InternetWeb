@@ -55,14 +55,35 @@ public class HomePage extends BasePage {
     @FindBy(css = "[href='/windows']")
     WebElement windows;
 
-    public void getMultiWindowsPage(){
+    public void getMultiWindowsPage() {
         click(windows);
     }
 
     @FindBy(css = "[href='/dropdown']")
-WebElement dropdown;
+    WebElement dropdown;
 
-    public void getDropdownPage(){
+    public void getDropdownPage() {
         click(dropdown);
+    }
+
+    @FindBy(css = "[href='/horizontal_slider']")
+    WebElement slider;
+
+    public void getSlider() {
+        click(slider);
+    }
+
+    @FindBy(css = "[href='/drag_and_drop']")
+    WebElement drag;
+
+    public void getDragAndDropPage() {
+        click(drag);
+    }
+
+    @FindBy(css = "[href='/hovers']")
+    WebElement hover;
+
+    public void getHeversPage() {
+        click(hover);
     }
 }

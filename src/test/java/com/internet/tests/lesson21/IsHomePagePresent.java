@@ -1,5 +1,6 @@
-package com.internet.tests;
+package com.internet.tests.lesson21;
 
+import com.internet.tests.TestBase;
 import com.internetWeb.pages.HomePage;
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package com.internetWeb.pages.pagesOfInternet;
+package com.internetWeb.pages.pagesOfInternet.lesson22;
 
 import com.internetWeb.pages.BasePage;
 import org.openqa.selenium.WebDriver;

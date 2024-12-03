@@ -1,7 +1,8 @@
-package com.internet.tests;
+package com.internet.tests.lesson21;
 
+import com.internet.tests.TestBase;
 import com.internetWeb.pages.HomePage;
-import com.internetWeb.pages.pagesOfInternet.ForgotPassword;
+import com.internetWeb.pages.pagesOfInternet.lesson21.ForgotPassword;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

@@ -1,7 +1,8 @@
-package com.internet.tests;
+package com.internet.tests.lesson22;
 
+import com.internet.tests.TestBase;
 import com.internetWeb.pages.HomePage;
-import com.internetWeb.pages.pagesOfInternet.AlertsPage;
+import com.internetWeb.pages.pagesOfInternet.lesson22.AlertsPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
