@@ -1,16 +1,11 @@
 package com.internetWeb.pages.pagesOfInternet.lesson24;
 
 import com.internetWeb.pages.BasePage;
-import com.internetWeb.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
-import java.time.Duration;
 
 public class HoversPage extends BasePage {
 
@@ -18,13 +13,11 @@ public class HoversPage extends BasePage {
         super(driver);
     }
 
-
     @FindBy(xpath = "//div[@class = 'figure'][2]")
     WebElement secondUser;
 
     public HoversPage showMeHover() {
         new Actions(driver).moveToElement(secondUser).perform();
-        pause(1000);
         return this;
     }
 
