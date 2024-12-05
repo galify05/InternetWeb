@@ -86,4 +86,27 @@ public class HomePage extends BasePage {
     public void getHeversPage() {
         click(hover);
     }
+
+
+    @FindBy(css = "[href='/broken_images']")
+    WebElement brokenImage;
+
+    public void getBrokenImagePage() {
+        click(brokenImage);
+    }
+
+
+    @FindBy(css = "[href='/redirector']")
+    WebElement redirekt;
+
+    public void getRedirektPage() {
+        click(redirekt);
+    }
+
+
+    @FindBy(css = "[href='/upload']")
+    WebElement uploading;
+    public void getUploadPage() {
+    click(uploading);
+    }
 }
