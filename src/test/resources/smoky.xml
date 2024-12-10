@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoky" verbose="1">
+    <test name="Smoky">
+        <classes>
+            <class name="com.internet.tests.lesson21.IsHomePagePresent"/>
+            <class name="com.internet.tests.lesson21.ForgotPasswordTest"/>
+<!--            <class name="com.internet.tests.lesson22.AlertsTest"/>-->
+<!--            <class name="com.internet.tests.lesson22.IframesTest"/>-->
+<!--            <class name="com.internet.tests.lesson23.DropdownTests"/>-->
+<!--            <class name="com.internet.tests.lesson23.MultiWindowsTests"/>-->
+<!--            <class name="com.internet.tests.lesson24.DragAndDropTest"/>-->
+<!--            <class name="com.internet.tests.lesson24.HorizontalSliderTest"/>-->
+<!--            <class name="com.internet.tests.lesson24.HoversTest"/>-->
+<!--            <class name="com.internet.tests.lesson25.BrokenImageTests"/>-->
+<!--            <class name="com.internet.tests.lesson25.RedirectionLinkTest"/>-->
+<!--            <class name="com.internet.tests.lesson26.UploadTesting"/>-->
+        </classes>
+    </test>
+</suite>
