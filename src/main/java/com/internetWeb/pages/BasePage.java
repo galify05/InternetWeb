@@ -1,9 +1,11 @@
 package com.internetWeb.pages;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,7 +34,6 @@ public class BasePage {
             element.sendKeys(text);
         }
     }
-
     // /////////////////////////////// метод для проверки работоспособности ссылок ///////////////////////////////////////////
     protected void verifyLinks(String url) {
         try {
@@ -60,4 +61,16 @@ public class BasePage {
             throw new RuntimeException(e);
         }
     }
+    // /////////////// для тыка по элементу в определенуую область////////////////////////
+    public void clickWithRectangle(WebElement element, int x, int y) {
+        Rectangle rectangle = element.getRect();
+
+        int offsetX = rectangle.getWidth() / x;
+        int offsetY = rectangle.getHeight() / y;
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+        actions.moveByOffset(-offsetX, -offsetY).click().perform();
+    }
+    // //////////////////////////////////////////////////////////////////////////
 }

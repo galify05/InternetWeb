@@ -19,4 +19,11 @@ public class UploadTesting extends TestBase {
                 .verifyUploadingImg("File Uploaded!")
         ;
     }
+
+
+    @Test
+    public void uploadingFileTestWithRobot(){
+        new UploadingFilePage(driver).uploadTxt()
+                .verifyUploadingImg("File Uploaded!");
+    }
 }
